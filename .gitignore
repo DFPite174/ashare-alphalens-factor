@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+*.tmp
+.env
+data/storage/raw_cache/
+data/storage/snapshots/
+data/storage/normalized/
+cache/
+jobs/
+snapshots/
+*.pyd.bak

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ashare-alphalens-factor"
+version = "1.0.0"
+description = "Industrial Alphalens-cn Factor Research & Robustness Evaluation Module for A-share Quantitative Research"
+readme = "README.md"
+authors = [{ name = "Changlong Xie" }]
+requires-python = ">=3.12"
+dependencies = [
+    "alphalens-cn>=0.4.8",
+    "pandas>=2.2.0,<3.0",
+    "scipy>=1.14.0",
+    "duckdb>=1.0.0",
+    "jinja2>=3.0.0",
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
